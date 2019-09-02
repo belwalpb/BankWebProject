@@ -1,16 +1,47 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+            function wait()
+            { document.body.style.cursor='wait'; }
+            $(document).ready(function(){
+            
+            $("#submit").click(function(){
+               
+            $(".circlespin").show();
+            });
+            });           
+        </script>
+        <title>NetBank Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body background="img/bgimage.jpg" style="height:100%;width: 100%;">
+        <div align="right" style="position:relative;top:10%;">
+        <div align="center" class="container" style="height:75%;width:500px;border:2px solid beige;border-radius:15px 50px 30px;opacity:1;">
+            <img src="img/netbank.png" style="height:20%;width:20%;">
+        <h1  style="margin-bottom:8%;color:chartreuse; ">Login</h1>
+        <form action="loginvalidate" method="POST" onsubmit="wait()">
+            
+            <b style="color:#ccff99;">Username:</b> <input type="text" name="username" class="form-control">
+    <b style="color: #ccff99;">Password:</b> <input type="password" name="password" class="form-control">
+    <button type="submit" value="submit" class="btn btn-primary btn-lg" style="margin-top:5%;" id="submit">Submit</button>   
+        </form>
+        <div style="display:none;" class="circlespin"><div class="spinner-grow text-muted"></div>
+             <div class="spinner-grow text-primary" ></div>
+             <div class="spinner-grow text-success"></div>
+             <div class="spinner-grow text-info"></div>
+             <div class="spinner-grow text-warning"></div>
+             <div class="spinner-grow text-danger"></div>
+             <div class="spinner-grow text-secondary"></div>
+             <div class="spinner-grow text-dark"></div>
+             <div class="spinner-grow text-light"></div></div>
+       </div>
+        </div>
     </body>
 </html>
