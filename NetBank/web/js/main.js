@@ -14,7 +14,7 @@ $(window).on('load', function() {
 		Preloder
 	--------------------*/
 	$(".loader").fadeOut(); 
-	$("#preloder").delay(200).fadeOut("slow");
+	$("#preloder").delay(300).fadeOut("slow");
 
 });
 
