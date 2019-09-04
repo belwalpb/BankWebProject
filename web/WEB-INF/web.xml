@@ -16,6 +16,14 @@
         <servlet-name>fetchcin</servlet-name>
         <servlet-class>manager.fetchcin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>personalloginvalidate</servlet-name>
+        <servlet-class>validation.personalloginvalidate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>internaluservalidate</servlet-name>
+        <servlet-class>validation.internaluservalidate</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginvalidate</servlet-name>
         <url-pattern>/loginvalidate</url-pattern>
@@ -32,13 +40,21 @@
         <servlet-name>fetchcin</servlet-name>
         <url-pattern>/manager/fetchcin</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>personalloginvalidate</servlet-name>
+        <url-pattern>/personalloginvalidate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>internaluservalidate</servlet-name>
+        <url-pattern>/internaluservalidate</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <error-page>
-    <error-code>404</error-code>
-    <location>/defaulterror404.html</location>
+        <error-code>404</error-code>
+        <location>/defaulterror404.html</location>
     </error-page>
 </web-app>

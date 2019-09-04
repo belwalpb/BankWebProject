@@ -27,7 +27,7 @@
 	<![endif]-->
 	<script>
 	
-	document.getElementById("internallogin").addEventListener("click", internalloginshow);
+	
 	function personalloginshow() {
 		document.getElementById("personalloginbox").style.display="block";
 		document.getElementById("internalloginbox").style.display="none";
@@ -59,7 +59,7 @@
 			<a href="contact.html" class="site-btn">Contact Us</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
-					<li><a href="#" id="personallogin" onclick="personalloginshow()">Personal</a></li>
+					<li><a href="#" id="personallogin" onclick="personalloginshow()">Login</a></li>
 					<li><a href="#" id="internallogin" onclick="internalloginshow()">Internal</a></li>
 					<li><a href="features.html">Features</a></li>
 					<li><a href="about.html">About</a></li>
@@ -86,14 +86,14 @@
 					</form>
 				</div>
                 <div class="col-md-6 hero-text" id="personalloginbox"  style="display: none;" >
-					<form class="hero-subscribe-from" action="pvalidate" method="POST">
+					<form class="hero-subscribe-from" action="personalloginvalidate" method="POST">
 							<input type="text" placeholder="Enter Username">
 							<input type="text" placeholder="Enter Password"></br>
 							<button class="site-btn sb-gradients" type="submit">Submit</button>
 					</form>
 				</div>
 				<div class="col-md-6 hero-text" id="internalloginbox"  style="display: none;">
-						<form class="hero-subscribe-from" action="ivalidate" method="POST">
+						<form class="hero-subscribe-from" action="internaluservalidate" method="POST">
 								<input type="text" placeholder="EId">
 								<input type="text" placeholder="Enter Password"></br>
 								<button class="site-btn sb-gradients" type="submit">Submit</button>
@@ -236,7 +236,7 @@
 				</div>
 				<div class="col-sm-6 col-md-6 col-lg-3">
 					<div class="fact">
-						<h2>5000M</h2>
+						<h2>500M</h2>
 						<p>Largest <br> Transactions</p>
 						<i class="ti-stats-up"></i>
 					</div>
