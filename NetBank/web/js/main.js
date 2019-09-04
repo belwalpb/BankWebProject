@@ -1,9 +1,4 @@
-/* =================================
-------------------------------------
-	Cryptocurrency - Landing Page Template
-	Version: 1.0
- ------------------------------------ 
- ====================================*/
+
 
 
 'use strict';
@@ -14,7 +9,7 @@ $(window).on('load', function() {
 		Preloder
 	--------------------*/
 	$(".loader").fadeOut(); 
-	$("#preloder").delay(300).fadeOut("slow");
+	$("#preloder").delay(200).fadeOut("slow");
 
 });
 
