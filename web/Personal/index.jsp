@@ -1,8 +1,4 @@
-<%-- 
-    Document   : index
-    Created on : 5 Sep, 2019, 9:56:04 AM
-    Author     : Priyanshu
---%>
+<!--Homepage for personal user -->
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -13,5 +9,10 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        usernamE:: <%= session.getAttribute( "USERNAME" ) %>
+        <BR>
+        CIN  <%= session.getAttribute( "CIN" ) %></br>
+        savingaccount  <%= session.getAttribute( "SAVINGACCOUNT" ) %></br>
+        id: <%= session.getId() %>
     </body>
 </html>
