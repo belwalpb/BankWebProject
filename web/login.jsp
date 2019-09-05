@@ -66,11 +66,12 @@
 			<div class="row">
 				
                 <div class="col-md-7 hero-text"  >
-                    <h3 style="color:red;">${requestScope["message"]}</h3>
+                    
                     <h2>Login Here:</h2>
+                    <h3 style="color:red;">${requestScope["message"]}</h3>
 					<form class="hero-subscribe-from" action="validate" method="POST">
-							<input type="text" placeholder="Enter Username">
-							<input type="text" placeholder="Enter Password"></br>
+                                            <input type="text" placeholder="Enter Username" name="username"><br>
+							<input type="text" placeholder="Enter Password" name="password"></br>
 							<button class="site-btn sb-gradients" type="submit">Submit</button>
 					</form>
 				</div>
