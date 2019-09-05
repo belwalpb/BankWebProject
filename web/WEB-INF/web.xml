@@ -12,6 +12,10 @@
         <servlet-name>validate</servlet-name>
         <url-pattern>/validate</url-pattern>
     </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>validate</servlet-name>
+        <url-pattern>/Personal/validate</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>employeevalidate</servlet-name>
         <url-pattern>/employeevalidate</url-pattern>
