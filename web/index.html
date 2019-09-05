@@ -25,21 +25,7 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<script>
 	
-	
-	function personalloginshow() {
-		document.getElementById("personalloginbox").style.display="block";
-		document.getElementById("internalloginbox").style.display="none";
-		document.getElementById("defaultview").style.display="none";
-	}
-	function internalloginshow()
-	{ document.getElementById("personalloginbox").style.display="none";
-		document.getElementById("internalloginbox").style.display="block";
-		document.getElementById("defaultview").style.display="none";
-	}
-	
-	</script>
 
 </head>
 <body>
@@ -56,14 +42,15 @@
 			</a>
 			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
 			<a href="" class="user"><i class="fa fa-user"></i></a>
-			<a href="contact.html" class="site-btn">Contact Us</a>
+			<a href="login.jsp" class="site-btn">Login</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
-					<li><a href="#" id="personallogin" onclick="personalloginshow()">Login</a></li>
-					<li><a href="#" id="internallogin" onclick="internalloginshow()">Internal</a></li>
+					
+					<li><a href="banklogin.jsp">Internal</a></li>
 					<li><a href="features.html">Features</a></li>
 					<li><a href="about.html">About</a></li>
                                         <li><a href="offers.html">Offers</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
 					
 					
 				</ul>

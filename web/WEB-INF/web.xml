@@ -1,52 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>loginvalidate</servlet-name>
-        <servlet-class>Uservalidation.loginvalidate</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>accountopeningdo</servlet-name>
-        <servlet-class>manager.accountopeningdo</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>fetchac</servlet-name>
-        <servlet-class>manager.fetchac</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>fetchcin</servlet-name>
-        <servlet-class>manager.fetchcin</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>personalloginvalidate</servlet-name>
-        <servlet-class>validation.personalloginvalidate</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>internaluservalidate</servlet-name>
-        <servlet-class>validation.internaluservalidate</servlet-class>
+        <servlet-name>validate</servlet-name>
+        <servlet-class>validation.validate</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>loginvalidate</servlet-name>
-        <url-pattern>/loginvalidate</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>accountopeningdo</servlet-name>
-        <url-pattern>/manager/accountopeningdo</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>fetchac</servlet-name>
-        <url-pattern>/manager/fetchac</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>fetchcin</servlet-name>
-        <url-pattern>/manager/fetchcin</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>personalloginvalidate</servlet-name>
-        <url-pattern>/personalloginvalidate</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>internaluservalidate</servlet-name>
-        <url-pattern>/internaluservalidate</url-pattern>
+        <servlet-name>validate</servlet-name>
+        <url-pattern>/validate</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
