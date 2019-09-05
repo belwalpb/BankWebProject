@@ -1,15 +1,4 @@
-/* =================================
-------------------------------------
-  Cryptocurrency - Landing Page
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
 
-
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 
 @font-face {
 	font-family: 'Futura';
@@ -339,8 +328,8 @@ ol {
 -----------------------*/
 
 .hero-section {
-	height: 900px;
-	padding-top: 260x;
+	height: 800px;
+	padding-top: 120px;
 	display: block;
 	background-image: url("../img/hero-bg.png");
 	background-size: cover;
