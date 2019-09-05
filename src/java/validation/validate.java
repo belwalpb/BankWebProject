@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 public class validate extends HttpServlet {
@@ -42,19 +43,24 @@ public class validate extends HttpServlet {
     if(rs.next()){    //if the user is found then
        
         String status=rs.getString("STATUS");
+        String CIN=rs.getString("CIN");
+        String SAVINGACCOUNT=rs.getString("SAVINGACCOUNT");
         
         if(!status.equalsIgnoreCase("active"))
                                                              //if user is registered but not permitted
         {
-             request.setAttribute("message", "You dont have permission to use this platform. Kindly Visit Your Branch");           
+             request.setAttribute("message", "You Dont Have Permissions To Use This Platform. Kindly Visit Your Branch For More Details");           
            request.getRequestDispatcher("login.jsp").forward(request, response);    
             
         }
         
-        else
+        else                       //iF THE USER IS A REGISTERED USER AND HAVE PERMISSIONS THEN REDIRECT TO THE USER PAGE AND MAINTAIN SESSION
         {
-        
-        response.sendRedirect("Personal");  
+          HttpSession session = request.getSession();       // create session variable   
+         session.setAttribute("USERNAME", username);         //STORING USERNAME IN SESSION
+        session.setAttribute("CIN",CIN);                    //STORING CIN IN SESSION
+        session.setAttribute("SAVINGACCOUNT",SAVINGACCOUNT);  //STORING SAVINGACCOUNT IN SESSION
+         response.sendRedirect("Personal");  
 
         }
            

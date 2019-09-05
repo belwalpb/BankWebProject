@@ -71,7 +71,7 @@
                     <h3 style="color:red;">${requestScope["message"]}</h3>
 					<form class="hero-subscribe-from" action="validate" method="POST">
                                             <input type="text" placeholder="Enter Username" name="username"><br>
-							<input type="text" placeholder="Enter Password" name="password"></br>
+							<input type="password" placeholder="Enter Password" name="password"></br>
 							<button class="site-btn sb-gradients" type="submit">Submit</button>
 					</form>
 				</div>
