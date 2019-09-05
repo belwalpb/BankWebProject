@@ -55,7 +55,7 @@ public class employeevalidate extends HttpServlet {
          session.setAttribute("USERNAME", username);         //STORING USERNAME IN SESSION
         session.setAttribute("EID",EID);                    //STORING EID IN SESSION
         session.setAttribute("FULLNAME",FULLNAME);  //STORING NAME IN SESSION
-         response.sendRedirect("Internal");  
+         response.sendRedirect("Internal/admin");  
 
         }
            

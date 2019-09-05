@@ -12,7 +12,7 @@
 
 %>
 
-<!--Homepage for personal user -->
+<!--Homepage for Internal user -->
 
 <!DOCTYPE html>
 <html lang="en">
