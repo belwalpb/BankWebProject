@@ -1,5 +1,19 @@
 <!--Homepage for personal user -->
 
+<% 
+
+    String USERNAME=(String)session.getAttribute( "USERNAME" );
+    out.println("<a href=\"/login.jsp\">Click</a>");
+    
+   if(USERNAME==null)
+   {
+   request.setAttribute("message", "Your Session Has Been Expired. Kindly Login Again.");
+    request.getRequestDispatcher("/login.jsp").forward(request, response);
+   }
+    
+
+%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -9,7 +23,7 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        usernamE:: <%= session.getAttribute( "USERNAME" ) %>
+        USERNAME:: <%= session.getAttribute( "USERNAME" ) %>
         <BR>
         CIN  <%= session.getAttribute( "CIN" ) %></br>
         savingaccount  <%= session.getAttribute( "SAVINGACCOUNT" ) %></br>
