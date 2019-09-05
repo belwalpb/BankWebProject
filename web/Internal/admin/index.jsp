@@ -8,7 +8,7 @@
      //Session Validating if no username is found in session then will redirect to login 
    if(USERNAME==null)
    {
-   response.sendRedirect("../banklogin.jsp");
+   response.sendRedirect("../../banklogin.jsp");
    }
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -77,17 +77,68 @@
 	<section class="hero-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 hero-text" id="defaultview">
-					<h3>Perfect <br>For Modern Bankers</h3>
-					<h4>Use modern progressive technologies from our Bank</h4>
-					
+				<div class="col-lg-4 hero-text" id="defaultview">
+                                    <h3>Saving Account-<br></h3><br>
+                                    <h4> <a href="opennewsaving">Open New Saving Account</a> </h4>
+                                    <h4><a href="viewaccount">View  Account</a> </h4>
+                                     <h4><a href="addmoneysaving">Add Money</a> </h4>
+                                    <h4><a href="withdrawmoneysaving">Withdraw Money</a> </h4>
+                                     <h4><a href="onlinebankingregistration">Register For Internet Banking</a> </h4>	
 				</div>
-                
-			
-				<div class="col-md-6">
-					<img src="img/laptop.png" class="laptop-image" alt="">
+                            <div class="col-lg-4 hero-text" id="defaultview">
+                                 <h3>Current Account-<br></h3><br>
+                                <h4> <a href="opennewcurrent">Open New Current Account</a> </h4>
+                                    <h4><a href="viewcurrentaccount">View  Account</a> </h4>
+                                    <h4><a href="addmoneycurrent">Add Money</a> </h4>
+                                    <h4><a href="withdrawmoneycurrent">Withdraw Money</a> </h4>  
+                                </div>
+                             <div class="col-lg-4 hero-text" id="defaultview">
+                                    <h3>Loan Accounts-<br></h3><br>
+                                    <h4> <a href="opennewloan">New Loan Account</a> </h4>
+                                    <h4><a href="viewloanaccount">View  Account</a> </h4>
+                                     <h4><a href="depositeinstallment">Deposite Installment</a> </h4>
+                                    <h4><a href="withdrawmoneyloan">Disburse Amount</a> </h4>	
 				</div>
 			</div>
+                    <div class="row">
+                       
+                        <div class="col-lg-4 hero-text" id="defaultview">
+                                    <h3>Debit Card-<br></h3><br>
+                                    <h4> <a href="newdebitcardsaving">New Debit Card- Saving A/C</a> </h4>
+                                    <h4><a href="newdebitcardcurrent">New Debit Card-Current A/C</a> </h4>
+                                     <h4><a href="newaddonsaving"> Add-On Card-Saving A/C</a> </h4>
+                                    <h4><a href="newaddoncurrent">Add-On Card-Current A/C</a> </h4>
+                                    <h4><a href="hotlistdebitcard"> Hotlist Debit Card</a> </h4>   
+				</div>
+                        <div class="col-lg-4 hero-text" id="defaultview">
+                                    <h3>Credit Card-<br></h3><br>
+                                    <h4> <a href="newcreditcard">New Credit Card</a> </h4>
+                                    <h4> <a href="changecreditcardlimit">Update Limit</a> </h4>
+                                     <h4><a href="viewcreditcardstatement"> View Statement</a> </h4>
+                                    <h4><a href="addnewtranscreditcard">Add New Transaction</a> </h4>
+                                    <h4><a href="hotlistcreditcard"> Hotlist Credit Card</a> </h4>   
+				</div>
+                        <div class="col-lg-4 hero-text" id="defaultview">
+                                    <h3>Others-<br></h3><br>
+                                    <h4> <a href="updatekyc">Update KYC</a> </h4>
+                                    <h4> <a href="chequebookrequest">Cheque Book Request</a> </h4>
+                                     <h4><a href="updatemobilenumber">Update Mobile Number/Email</a> </h4>
+                                    <h4><a href="generatestatement">Generate Statement</a> </h4>
+                                    <h4><a href="resetinternetbankingpassword">Reset Internet Banking Password</a></h4> 
+                                     <h4> <a href="restrictuser">Restrict User For Logging In</a> </h4>
+                                    
+				</div>
+                        
+                    </div>
+                   
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                    
 		</div>
 	</section>
 	<!-- Hero section end -->
