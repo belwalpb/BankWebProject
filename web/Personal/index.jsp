@@ -3,12 +3,11 @@
 <% 
 
     String USERNAME=(String)session.getAttribute( "USERNAME" );
-    out.println("<a href=\"/login.jsp\">Click</a>");
+                                                                     //Session Validating if no username is found in session then will redirect to login
     
    if(USERNAME==null)
    {
-   request.setAttribute("message", "Your Session Has Been Expired. Kindly Login Again.");
-    request.getRequestDispatcher("/login.jsp").forward(request, response);
+   response.sendRedirect("/login.jsp");
    }
     
 

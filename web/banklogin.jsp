@@ -36,7 +36,7 @@
 				<img src="img/logo.png" alt="">
 			</a>
 			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
-			<a href="index.html" class="user"><i class="fa fa-user"></i></a>
+			<a href="index.html" class="user"></a>
 			<a href="index.html" class="site-btn">Home</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
