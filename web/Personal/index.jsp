@@ -7,7 +7,7 @@
     
    if(USERNAME==null)
    {
-   response.sendRedirect("/login.jsp");
+   response.sendRedirect("403error.html");
    }
     
 
