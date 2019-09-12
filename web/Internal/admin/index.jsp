@@ -8,7 +8,7 @@
      //Session Validating if no username is found in session then will redirect to login 
    if(USERNAME==null)
    {
-   response.sendRedirect("403error.html");
+   response.sendRedirect("../../banklogin.jsp");
    }
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -55,7 +55,7 @@
 			</a>
 			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
 			
-			<a href="login.jsp" class="site-btn">Login</a>
+			<a href="logout.jsp" class="site-btn">Logout</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
 					

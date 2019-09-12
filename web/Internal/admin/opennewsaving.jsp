@@ -12,7 +12,7 @@
    }
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!--Homepage for Admin -->
+<!--Saving Account Opening -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +55,7 @@
 			</a>
 			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
 			
-			<a href="login.jsp" class="site-btn">Login</a>
+			<a href="logout.jsp" class="site-btn">Logout</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
 					
@@ -69,18 +69,69 @@
 				</ul>
 			</nav>
 		</div>
-	</header>
+        </header>
 	<!-- Header section end -->
 
 
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="container">
+                      <h3 style="margin-bottom: 4%">Personal Details:</h3>
 			<div class="row">
-				
-                                    
-				</div>
-                        
+                            <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="fname"><h4>Title:</h4></label>      
+                                <select class="form-control-lg">
+                                    <option value="MR.">MR.</option>
+                                    <option value="MRS.">MRS.</option>
+                                </select>   
+                            </div> </div>
+                           <div class="col-md-5">
+                            <div class="form-group">
+                                  
+                     <input type="text" placeholder="First Name" name="fname" class="form-control-lg">    
+                            </div> </div>
+                             <div class="col-md-5">
+                            <div class="form-group">
+                                     
+                     <input type="text" placeholder="First Name" name="fname" class="form-control-lg"> 
+                          </div></div>
+                        </div></br>
+                      
+                     
+                       <div class="row">
+                          <div class="col-md-2"></div>
+                          <div class="col-md-5">
+                            <div class="form-group">           
+                     <input type="text" placeholder="Father Name" name="fname" class="form-control-lg">    
+                            </div> 
+                          </div>
+                           <div class="col-md-5">
+                            <div class="form-group">           
+                     <input type="text" placeholder="Mother Name" name="fname" class="form-control-lg">    
+                            </div> 
+                          </div>    
+                       </div></br>
+                      
+                      <div class="row">
+                          <div class="col-md-2"></div>
+                          <div class="col-md-5">
+                            <div class="form-group">  
+                                <input type="text" name="dob" placeholder="DOB(DD-MM-YYYY)" class="form-control-lg">    
+                            </div> 
+                          </div>
+                           <div class="col-md-5">
+                            <div class="form-group">           
+                    <label for="Gender">Gender:</label>
+                  <select class="form-control" id="Gender">
+                  <option value="male">Male</option>
+                 <option value="female">Female</option>
+                  <option value="other">Other</option>
+                 
+                   </select>    
+                            </div> 
+                          </div>    
+                      </div></br>   
                     </div>
                    
                         
