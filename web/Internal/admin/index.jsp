@@ -8,7 +8,7 @@
      //Session Validating if no username is found in session then will redirect to login 
    if(USERNAME==null)
    {
-   response.sendRedirect("../../banklogin.jsp");
+   response.sendRedirect("../../403.html");
    }
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

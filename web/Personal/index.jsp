@@ -7,7 +7,7 @@
     
    if(USERNAME==null)
    {
-   response.sendRedirect("403error.html");
+   response.sendRedirect("../../403.html");
    }
     
 
