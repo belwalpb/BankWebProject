@@ -52,7 +52,7 @@
 					<li><a href="banklogin.jsp" >Internal</a></li>
 					<li><a href="features.html">Features</a></li>
 					<li><a href="about.html">About</a></li>
-                                        <li><a href="offers.html">Offers</a></li>
+                                        <li><a href="#">Offers</a></li>
                                         <li><a href="contact.html">Contact Us</a></li>
 					
 					
