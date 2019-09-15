@@ -330,7 +330,7 @@ ol {
 -----------------------*/
 
 .hero-section {
-	height: 800px;
+	height: auto;
 	padding-top: 120px;
 	display: block;
 	background-image: url("../img/hero-bg.png");

@@ -4,31 +4,31 @@
     Author     : Priyanshu
 --%>
 
-<%@include file="sessionvalidate.jsp" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!--Saving Account Opening -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Welcome <%=session.getAttribute("FULLNAME") %></title>
+    <title>Signup Here</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Cryptocurrency Landing Page Template">
 	<meta name="keywords" content="cryptocurrency, unica, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link href="../img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/themify-icons.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="../css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../css/themify-icons.css"/>
+	<link rel="stylesheet" href="../css/animate.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="../css/style.css"/>
 
 
 	
@@ -42,7 +42,7 @@
 	</div>
 
 	<!-- Header section -->
-       <%@include file="header.html" %>
+       <%@include file="../header.html" %>
 	<!-- Header section end -->
 
 
@@ -53,6 +53,7 @@
 			<div class="row">
                             <div class="col-md-2">
                             <div class="form-group">
+                                <form action="index.jsp" method="POST">
                                 <label for="fname"><h4>Title:</h4></label>      
                                 <select class="form-control-lg">
                                     <option value="MR.">MR.</option>
@@ -67,7 +68,7 @@
                              <div class="col-md-5">
                             <div class="form-group">
                                      
-                     <input type="text" placeholder="Last Name" name="lname" class="form-control-lg"> 
+                     <input type="text" placeholder="First Name" name="fname" class="form-control-lg"> 
                           </div></div>
                         </div></br>
                       
@@ -76,12 +77,12 @@
                           <div class="col-md-2"></div>
                           <div class="col-md-5">
                             <div class="form-group">           
-                     <input type="text" placeholder="Father Name" name="fathername" class="form-control-lg">    
+                     <input type="text" placeholder="Father Name" name="fname" class="form-control-lg">    
                             </div> 
                           </div>
                            <div class="col-md-5">
                             <div class="form-group">           
-                     <input type="text" placeholder="Mother Name" name="mothername" class="form-control-lg">    
+                     <input type="text" placeholder="Mother Name" name="fname" class="form-control-lg">    
                             </div> 
                           </div>    
                        </div></br>
@@ -96,7 +97,7 @@
                            <div class="col-md-5">
                             <div class="form-group">           
                     <label for="Gender">Gender:</label>
-                  <select class="form-control" id="Gender" name="gender">
+                  <select class="form-control" id="Gender">
                   <option value="male">Male</option>
                  <option value="female">Female</option>
                   <option value="other">Other</option>
@@ -108,85 +109,26 @@
                     </div>
                    
             <div class="container">
-                    <h3 style="margin-bottom: 4%">Document Details:</h3>  
-               <div class="row">
-                   <div class="col-lg-4 form-group">
-                       <label for="aadharcard"><h5>Aadhar:</h5></label>
-                       <input type="text" class="form-control" name="aadharcard">
-                   </div> 
-                    <div class="col-lg-4"> </div>
-                   <div class="col-lg-4">
-                       <label for="aadharimage"><h5>Upload Aadhar:</h5></label>
-                       <input type="file" class="form-control" >
-                   </div>    
-                </div>
-                    <div class="row">
-                    <div class="col-lg-4 form-group">
-                       <label for="pancard"><h5>Pan Card:</h5></label>
-                       <input type="text" class="form-control" name="pancard">
-                   </div> 
-                    <div class="col-lg-4"> </div>
-                   <div class="col-lg-4">
-                       <label for="panimage"><h5>Upload Pan:</h5></label>
-                       <input type="file" class="form-control" name="panimage" >
-                   </div> 
-                   </div>
-            </div>  </br></br>   
-            
-             <div class="container">
-                    <h3 style="margin-bottom: 4%">Communication Detail:</h3>  
+                    <h3 style="margin-bottom: 4%">Communication Details:</h3>  
                <div class="row">
                    <div class="col-lg-4 form-group">
                        <label for="mobile"><h5>Mobile Number:</h5></label>
-                       <input type="text" class="form-control" name="mobile" >
+                       <input type="text" class="form-control" name="mobile">
                    </div> 
                     <div class="col-lg-4"> </div>
                    <div class="col-lg-4">
                        <label for="email"><h5>Email:</h5></label>
-                       <input type="email" class="form-control" name="email" >
+                       <input type="email" class="form-control" >
                    </div>    
-               </div></br></br>
+                </div>
                     <div class="row">
-                    <div class="col-lg-12 form-group">
-                        <h4>Address:</h4></br>   </div>
-                        <div class="col-lg-4 form-group"> 
-                       <label for="addressline1"><h5>Address Line 1:</h5></label>
-                       <input type="text" class="form-control" name="addressline1">
-                   </div> 
-                    <div class="col-lg-4 form-group"> 
-                       <label for="addressline2"><h5>Address Line 2:</h5></label>
-                       <input type="text" class="form-control" name="addressline2">
-                   </div>
-                        <div class="col-lg-4 form-group"> 
-                       <label for="addressline2"><h5>City:</h5></label>
-                       <input type="text" class="form-control" name="city">
-                   </div>
-                    </div></br>
-               
-               <div class="row">
-                    
-                        <div class="col-lg-4 form-group"> 
-                       <label for="state"><h5>State:</h5></label>
-                       <input type="text" class="form-control" name="state">
-                   </div> 
-                    <div class="col-lg-4 form-group"> 
-                       <label for="country"><h5>Country:</h5></label>
-                       <input type="text" class="form-control" name="country">
-                   </div>
-                        <div class="col-lg-4 form-group"> 
-                       <label for="pincode"><h5>Pin Code/Zip Code:</h5></label>
-                       <input type="text" class="form-control" name="pincode">
-                   </div>
-                   </div>
-                    
-                    <br><br><br>
-                    <div class="row">
-                        <div class="col-lg-4"></div>
-                      <div class="col-lg-4"> <button class="btn btn-primary btn-block" ">Submit</button></div> 
-                      <div class="col-lg-4"></div>
+                        <div class="col-lg-4"> </div>
+                        <div class="col-lg-4"> <button type="submit" class="btn btn-primary">Submit</button></div>
+                        <div class="col-lg-4"> </div>
+                        </form>  
                     </div>
-               </div> 
-        </form>
+                    
+               </div>           
                         
                         
                         
@@ -202,7 +144,7 @@
 	
 
 	<!-- Newsletter section -->
-	 <%@include file="newsletter.html" %>
+	 <%@include file="../newsletter.html" %>
 	<!-- Newsletter section end -->
 
 
@@ -211,13 +153,13 @@
 
 
 	<!-- Footer section -->
-        <%@include file="footer.html" %>
+        <%@include file="../footer.html" %>
         <!-- Footer section end -->
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-	<script src="js/main.js"></script>
+	<script src="../js/main.js"></script>
 </body>
 </html>
 
