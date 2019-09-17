@@ -49,6 +49,7 @@
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="container">
+                    <form action="opennewsavingdo" method="POST">
                       <h3 style="margin-bottom: 4%">Personal Details:</h3>
 			<div class="row">
                             <div class="col-md-2">
@@ -186,16 +187,10 @@
                       <div class="col-lg-4"></div>
                     </div>
                </div> 
-        </form>
-                        
-                        
-                        
-                        
-                        
-                    
-                    
-		
-	</section>
+       
+        </br></br>               
+           </form>             
+             </section>
 	<!-- Hero section end -->
 
 
