@@ -1,1 +1,1 @@
-# NetBank
+# CryptoBank
